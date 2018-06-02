@@ -1,3 +1,3 @@
 spring.data.mongodb.host : database-follower
-spring.data.mongodb.port : 27018
+spring.data.mongodb.port : 27017
 spring.data.mongodb.database : followers

@@ -1,0 +1,8 @@
+zuul.ignored-services: "*"
+zuul.prefix:  /api
+zuul.routes.likeservice: /likes/**
+zuul.routes.authenticationservice: /auth/**
+zuul.sensitiveHeaders: Cookie,Set-Cookie
+zuul.debug.request: true
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 2500
+#signing.key: "345345fsdfsf5345"

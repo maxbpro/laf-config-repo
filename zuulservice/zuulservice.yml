@@ -1,6 +1,8 @@
 zuul.ignored-services: "*"
 zuul.prefix:  /api
 zuul.routes.likeservice: /likes/**
+zuul.routes.followerservice: /followers/**
+zuul.routes.userservice: /users/**
 zuul.routes.authenticationservice: /auth/**
 zuul.sensitiveHeaders: Cookie,Set-Cookie
 zuul.debug.request: true

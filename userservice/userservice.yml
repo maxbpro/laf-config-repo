@@ -6,3 +6,18 @@ spring:
       port: 27017
       # username: user
       # password: ${MONGODB_PASSWORD}      
+
+
+security:
+  oauth2:
+    client:
+      clientId: user-service
+      clientSecret: password1
+      accessTokenUri: http://auth-server:8901/auth/oauth/token
+      grant-type: client_credentials
+      scope: server
+    resource:
+      user-info-uri: http://auth-server:8901/auth/users/current
+
+
+    
